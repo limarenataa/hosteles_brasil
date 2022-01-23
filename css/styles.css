@@ -1,0 +1,106 @@
+* {
+  text-decoration: none;
+}
+
+/*header*/
+.jumbotron {
+  background-image: url(/images/hostel_trans.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  height: 80vh;
+  text-align: center; 
+}
+
+.redes-sociales {
+  margin-top: 23px;
+  color: white;
+  font-size: 2rem; }
+
+.redes-sociales a {
+  /* O "a" indica uma etiqueta dentro da classe, nesse caso a tag link*/
+  color: #0c0c0c;
+  font-size: 2rem;
+  margin: 1px; }
+
+.text-jb {
+  padding-top: 50px; }
+
+.text-jb h2 {
+  font-family: 'Barrio', cursive;
+  font-size: 60px;
+  color: #0c0c0c; }
+
+.text-jb span {
+  font-size: 60px;
+  color: #0c0c0c; }
+
+.text-jb h5 {
+  font-size: 25px;
+  color: #0c0c0c; }
+
+/*header*/
+
+/*main*/
+
+.row {
+  justify-content: space-evenly;
+}
+
+
+.row-collapse div.col {
+  flex-basis: content;
+  flex-grow: 0;
+}
+
+.row-respostas {
+  margin-top: 40px;
+}
+/*footer*/
+footer {
+  padding: 20px 40px 20px 40px;
+  background-color: rgba(243, 241, 237, 0.918);
+  margin-top: 70px;
+  margin-bottom: 0px; 
+}
+
+.footer--icon {
+  font-size: 16px;
+  color: #242323; 
+}
+
+h6 {
+  color: #242323; }
+
+/*footer*/
+/*home*/
+.card-hotel {
+  flex: 1 150px;
+  padding: 5px 5px 5px 5px;
+  margin-top: 40px;
+  margin-bottom: 0px; }
+
+.card_body {
+  margin-bottom: 20px; }
+
+.btn-reserva {
+  background-color: rgba(245, 142, 8, 0.918);
+  color: white;
+  margin-right: 10px;
+  margin-left: 25px; }
+
+.row-perguntas {
+  text-align: center; }
+
+.row-respostas {
+  text-align: center; }
+
+.carousel-slide {
+  margin-top: 50px; }
+
+/*home*/
+
+/*precios*/
+.star-icon {
+  color: #a79c0d; }
+
+/*precios*/

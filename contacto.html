@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Brasil</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barrio">
+  </head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><!--navbar-expand-md - faz com que o menu atue de forma responsiva. Qnd a página está expandida, aparece todas as informações na barra e do contrário, fica no formato mobile  -->
+      <a class="navbar-brand" href="#">Hosteles</a> <!--.navbar-brand for your company, product, or project name.-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- o botão collapse faz com que fique responsive-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li> 
+          <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li><!--Nessa página o item ativo passa a ser Contacto-->
+        </ul>
+      </div>
+    </nav><!--Barra de navegação-->
+  </header>
+  
+  <header>
+    <div class="jumbotron">
+      <nav class="redes-sociales">
+        <a href="http://instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="http://facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="http://twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://whatsapp.com"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      </nav>
+      <div class="text-jb texto">
+        <h2>Hostel <span>Brasil</span></h2> <!--Span - serve para utilizar outro tipo de texto-->
+        <h5>Disfruta de los mejores hosteles en Brasil</h5>
+      </div>
+    </div>
+  </header>
+
+  <main> <!-- tag que indica o conteúdo principal-->
+    <div class="container"> <!--É o que possibilita a margem-->
+      <nav aria-label="breadcrumb"> <!--Indicate the current page’s location within a navigational hierarchy-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li> <!--Cria um link com retorno para Home-->
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+
+      <h1>Dejame tu comentario</h1>
+
+      <form>
+        <div class="form-row"><!--Utiliza-se o "row" para indicar que deve-se fazer uma fila (na horizontal) dentro do formulário-->
+          <div class="form-group col-sm-6">
+            <label for="nombre">Nombre:</label> <!--Importante definir o "for" com o nome da ID definida que vai pertencer ao Input associado a esse Label. Dessa maneira, Boostrap aplica alinhamento, padding, margem.-->
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group col-sm-6"> <!--form-group faz com que o input fique na linha debaixo-->
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su a pellido">
+          </div>
+        </div>   
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email"> 
+        </div> 
+        <div class="form-row"><!--Utiliza-se o "row" para indicar que deve-se fazer uma fila dentro do formulário-->
+          <div class="form-group col-sm-6">
+            <label for="domicilio">Domicilio:</label> <!--Importante definir o "for" com o nome da ID definida que vai pertencer ao Input associado a esse Label. Dessa maneira, Boostrap aplica alinhamento, padding, margem.-->
+            <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="pais">País:</label>
+            <select id="pais" class="form-control"><!--a classe form-control é o que aplica o estilo padrão do formulário.-->
+              <option selected>Argentina</option>
+              <option>Brasil</option>
+              <option>Canadá</option>
+              <option>Chile</option>
+              <option>España</option>
+              <option>Portugal</option>
+            </select>  
+          </div>
+        </div>  
+        <div class="form-group">
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" class="form-control" rows="5"></textarea> <!--rows configura o tamanho da caixa de texto-->
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button> 
+      </form>
+    
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h6>CONTACTO</h6>
+    <p><span class="oi oi-phone footer-address-icon"></span>+55(00) 0000-0000</p>
+    <p><span class="oi oi-envelope-closed footer-address-icon"></span>hostelbrasil@gmail.com</p>
+    <p><span class="oi oi-map-marker footer-address-icon"></span>Brasil, Avenida calle 0. </a>
+  </footer>
+
+
+
+</body>
+
+</html>
+

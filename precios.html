@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Brasil</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barrio">
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><!--navbar-expand-md - faz com que o menu atue de forma responsiva. Qnd a página está expandida, aparece todas as informações na barra e do contrário, fica no formato mobile  -->
+      <a class="navbar-brand" href="#">Hosteles</a> <!--.navbar-brand for your company, product, or project name.-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- o botão collapse faz com que fique responsive-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li> <!--Nessa página o item ativo passa a ser Nosotros-->
+          <li class="nav-item active"><a class="nav-link" href="#">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav><!--Barra de navegação-->
+  </header>
+
+  <header>
+    <div class="jumbotron">
+      <nav class="redes-sociales">
+        <a href="http://instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="http://facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="http://twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://whatsapp.com"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      </nav>
+      <div class="text-jb texto">
+        <h2>Hostel <span>Brasil</span></h2> <!--Span - serve para utilizar outro tipo de texto-->
+        <h5>Disfruta de los mejores hosteles en Brasil</h5>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container"> <!--É o que possibilita a margem-->
+      <nav aria-label="breadcrumb"> <!--Indicate the current page’s location within a navigational hierarchy-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li> <!--Cria um link com retorno para Home-->
+          <li class="breadcrumb-item active" aria-current="page">Precios</li>
+        </ol>
+      </nav>
+
+        <div class="table-responsive"><!--Indicar que o conteúdo da tabela deve ser responsivo (habilita arrastar para o lado o conteúdo da tabela)-->
+          <table class="table table-striped"> <!--faz com tenha uma alternancia de cores em cada linha da tabela-->
+            <thead class="thead-light"> <!--aplicando cor ao head da tabela-->
+              <th>Calidad</th>
+              <th>Rio de Janeiro</th>
+              <th>Salvador</th>
+              <th>São Paulo</th>
+              <th>Belo Horizonte</th>
+            </thead>
+            <tbody>
+              <tr><!--Filas-->
+                <td><span class="oi oi-star star-icon"></span></td><!--Colunas-->
+                <td>$150</td>
+                <td>$180</td>
+                <td>$130</td>
+                <td>$120</td>
+              </tr>
+              <tr><!--Filas-->
+                <td><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span></td><!--Colunas-->
+                <td>$250</td>
+                <td>$280</td>
+                <td>$230</td>
+                <td>$220</td>
+              </tr>
+              <tr><!--Filas-->
+                <td><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span></td><!--Colunas-->
+                <td>$350</td>
+                <td>$380</td>
+                <td>$330</td>
+                <td>$320</td>
+              </tr>
+              <tr><!--Filas-->
+                <td><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span></td><!--Colunas-->
+                <td>$450</td>
+                <td>$480</td>
+                <td>$430</td>
+                <td>$420</td>
+              </tr>
+              <tr><!--Filas-->
+                <td><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span><span class="oi oi-star star-icon"></span></td><!--Colunas-->
+                <td>$550</td>
+                <td>$580</td>
+                <td>$530</td>
+                <td>$520</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </main>
+ <!-- Footer -->
+ <footer>
+  <h6>CONTACTO</h6>
+  <p><span class="oi oi-phone footer-address-icon"></span>+55(00) 0000-0000</p>
+  <p><span class="oi oi-envelope-closed footer-address-icon"></span>hostelbrasil@gmail.com</p>
+  <p><span class="oi oi-map-marker footer-address-icon"></span>Brasil, Avenida calle 0. </a>
+</footer>
+
+
+
+</body>
+
+</html>
+

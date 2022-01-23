@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Brasil</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barrio">
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><!--navbar-expand-md - faz com que o menu atue de forma responsiva. Qnd a página está expandida, aparece todas as informações na barra e do contrário, fica no formato mobile  -->
+      <a class="navbar-brand" href="#">Hosteles</a> <!--.navbar-brand for your company, product, or project name.-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- o botão collapse faz com que fique responsive-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">Nosotros</a></li> <!--Nessa página o item ativo passa a ser Nosotros-->
+          <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav><!--Barra de navegação-->
+  </header>
+
+  <header>
+    <div class="jumbotron">
+      <nav class="redes-sociales">
+        <a href="http://instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="http://facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="http://twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://whatsapp.com"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+      </nav>
+      <div class="text-jb texto">
+        <h2>Hostel <span>Brasil</span></h2> <!--Span - serve para utilizar outro tipo de texto-->
+        <h5>Disfruta de los mejores hosteles en Brasil</h5>
+      </div>
+  </div>
+  </header>
+
+  <main>
+    <div class="container"> <!--É o que possibilita a margem-->
+      <nav aria-label="breadcrumb"> <!--Indicate the current page’s location within a navigational hierarchy-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li> <!--Cria um link com retorno para Home-->
+          <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+        </ol>
+      </nav>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist"><!--Tabs para dar efeito de "menus" na pagina-->
+        <li class="nav-item">
+          <a class="nav-link active" id="historia-tab" data-toggle="tab" href="#historia" aria-selected="true">Historia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="actuacion-tab" data-toggle="tab" href="#actuacion" aria-selected="false">Actuación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="asociaciones-tab" data-toggle="tab" href="#asociaciones" aria-selected="false">Asociaciones</a>
+        </li>
+      </ul>
+      <!--conteudo das tabs-->
+      <div class="tab-content" id="myTabContent"> 
+        <!--Aba HISTORIA-->
+        <div class="tab-pane fade show active" id="historia" role="tabpanel" aria-labelledby="historia-tab">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quaerat asperiores 
+            qui maiores at natus unde, quo magnam deserunt suscipit quos harum quasi iste hic ad 
+            doloribus adipisci laudantium molestias minus quas dicta voluptatem! Molestias possimus
+             odio alias exercitationem nulla beatae perspiciatis repudiandae ipsam optio eos quaerat 
+             placeat, id repellendus.</span>
+        </div>
+        <!--Aba ACTUACION-->
+        <div class="tab-pane fade show" id="actuacion" role="tabpanel" aria-labelledby="actuacion-tab">
+          <div class="accordion" id="accordionActuacion"> <!--O id serve para referenciar os conteudos dentro deste accordion-->
+            <div class="card"> <!--cria o card que vai ser expandida-->
+              <header><!--Parte que aparece fechada-->
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><!--importante definir o Type.-->
+                      Región Nordeste
+                    </button>
+                  </h5>
+                </div>
+              </header>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionActuacion"> <!--conteudo oculto-->
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header>
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Región Sureste
+                    </button>
+                  </h5>
+                </div>
+              </header>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionActuacion"> <!-- data-parent se relaciona com a ID definida para o accordion-->
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <header>
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed"  type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Región Sur
+                    </button>
+                  </h5>
+                </div>
+              </header>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionActuacion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Aba ASOCIACIONES-->
+        <div class="tab-pane fade show" id="asociaciones" role="tabpanel" aria-labelledby="asociaciones-tab">
+          <span>teste</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h6>CONTACTO</h6>
+    <p><span class="oi oi-phone footer-address-icon"></span>+55(00) 0000-0000</p>
+    <p><span class="oi oi-envelope-closed footer-address-icon"></span>hostelbrasil@gmail.com</p>
+    <p><span class="oi oi-map-marker footer-address-icon"></span>Brasil, Avenida calle 0. </a>
+  </footer>
+</body>
+</html>
+
